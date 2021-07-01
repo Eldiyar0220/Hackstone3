@@ -1,0 +1,60 @@
+чтобы добавить пост сразу проверяем пермишшинс
+1.POST --> http://127.0.0.1:8000/v1/api/posts/
+(
+Category       easy-Cars
+marka-model    mersedes
+year           1996
+probeg         123454
+kerobka        Автомат
+color          Красный
+text           классная машина и очень магкий салон
+price          1463.15154
+image          image.jpg
+
+)
+
+чтобы зарегистрироваться
+2.POST  --> http://127.0.0.1:8000/v1/api/account/register/
+[
+email                ebolotov904@gmail.com
+password             123456789
+password_confirm     123456789
+]
+
+и получаем код активацию
+чтобы залогинть
+
+3.POST  --> http://127.0.0.1:8000/v1/api/account/login/
+здесь мы получаем токен
+headers передаем Authrnticate   Token sgheae35rga653g1a35e1a351fs
+
+чтобы логаут сделать
+4.POST  --> http://127.0.0.1:8000/v1/api/account/logout/
+
+чтобы добавить картинку
+5.POST  --> http://127.0.0.1:8000/v1/api/add-image/
+{
+image      image.jpg
+
+????
+}
+
+
+для поиска
+6.GET  --> http://127.0.0.1:8000/v1/api/posts/search/?q=mers
+
+
+для добавления отзывов
+6.GET  --> http://127.0.0.1:8000/v1/api/reviews/
+{
+author        1
+product       6
+text          something you gonna text there
+}
+
+
+
+ pip install django-cors-headers
+
+ pip install django-rest-framework-social-oauth2
+
