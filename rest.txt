@@ -3,5 +3,6 @@ psycopg2-binary==2.8.5
 pillow==7.1
 djangorestframework==3.11
 
+python-decouple
 
 drf-yasg
