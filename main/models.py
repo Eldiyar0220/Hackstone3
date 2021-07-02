@@ -58,7 +58,6 @@ class Review(models.Model):
     text        =   models.TextField()
     create_at   =   models.DateTimeField(auto_now_add=True)
     update_at   =   models.DateTimeField(auto_now=True)
-    like = models.SmallIntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)])
 
 #favorite
 class Favorite(TimeStampedModel):

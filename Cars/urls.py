@@ -60,7 +60,7 @@ urlpatterns = [
     path('v1/api/carts/', ListCart.as_view()),
     path('v1/api/carts/<int:pk>', DetailCart.as_view()),
     #auth
-        path('v1/api/account/auth/', include('rest_framework_social_oauth2.urls')),
+    path('v1/api/account/auth/', include('rest_framework_social_oauth2.urls')),
 
     #favorite
     path('v1/api/favorites/', FavoriteList.as_view()),
